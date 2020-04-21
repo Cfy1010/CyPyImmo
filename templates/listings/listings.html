@@ -101,13 +101,13 @@
           {% for i in listings.paginator.page_range %}
             {% if listings.number == i %}
               <li class="page-item active">
-               <a class="page-link">{{i}}</a>
+                <a class="page-link">{{i}}</a>
               </li>
           {% else %}
             <li class="page-item">
               <a href="?page={{i}}" class="page-link">{{i}}</a>
           </li>
-           {% endif %}
+            {% endif %}
           {% endfor %}
           {% if listings.has.next %}
           <li class="page-item">
